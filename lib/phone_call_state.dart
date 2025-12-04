@@ -27,4 +27,11 @@ class PhoneCallState {
   ///ios auto start
   ///[startMonitorService]
   Future<void> startMonitorService() => _phoneCallState.startMonitorService();
+
+  ///working only android
+  ///ios auto start
+  ///[stopMonitorServiceBro]
+  Future<void> stopMonitorServiceBro() => _phoneCallState.stopMonitorServiceBro();
+
+  Future<void> isServiceRunning() => _phoneCallState.isServiceRunning();
 }

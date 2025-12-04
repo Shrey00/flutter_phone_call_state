@@ -52,4 +52,14 @@ class MethodChannelFlutterPhoneCallState extends FlutterPhoneCallStatePlatform {
   Future<void> startMonitorService()  {
     return _methodChannelMonitor.invokeMethod("startCallService");
   }
+
+  @override
+  Future<void> stopMonitorServiceBro()  {
+    return _methodChannelMonitor.invokeMethod("stopCallServiceBro");
+  }
+
+  @override
+  Future<void> isServiceRunning()  {
+    return _methodChannelMonitor.invokeMethod("isServiceRunning");
+  }
 }

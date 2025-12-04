@@ -26,6 +26,13 @@ class MockFlutterPhoneCallStatePlatform
 
   @override
   Future<void> startMonitorService() async {}
+
+  @override
+  Future<void> stopMonitorServiceBro() async {}
+
+
+  @override
+  Future<void> isServiceRunning() async {}
 }
 
 void main() {
