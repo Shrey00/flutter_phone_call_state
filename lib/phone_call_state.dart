@@ -33,5 +33,5 @@ class PhoneCallState {
   ///[stopMonitorServiceBro]
   Future<void> stopMonitorServiceBro() => _phoneCallState.stopMonitorServiceBro();
 
-  Future<void> isServiceRunning() => _phoneCallState.isServiceRunning();
+  Future<bool?> isServiceRunning() => _phoneCallState.isServiceRunning();
 }

@@ -32,7 +32,7 @@ class MockFlutterPhoneCallStatePlatform
 
 
   @override
-  Future<void> isServiceRunning() async {}
+  Future<bool?> isServiceRunning() async {}
 }
 
 void main() {

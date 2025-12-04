@@ -59,7 +59,7 @@ class MethodChannelFlutterPhoneCallState extends FlutterPhoneCallStatePlatform {
   }
 
   @override
-  Future<void> isServiceRunning()  {
-    return _methodChannelMonitor.invokeMethod("isServiceRunning");
+  Future<bool?> isServiceRunning()  {
+    return _methodChannelMonitor.invokeMethod<bool>("isServiceRunning");
   }
 }

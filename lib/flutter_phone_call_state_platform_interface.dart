@@ -32,7 +32,7 @@ abstract class FlutterPhoneCallStatePlatform extends PlatformInterface {
   Future<void> stopMonitorServiceBro();
 
   /// check monitor service status for andro
-  Future<void> isServiceRunning();
+  Future<bool?> isServiceRunning();
 
 
   void onStateChange({required void Function(CallResult result) callback});

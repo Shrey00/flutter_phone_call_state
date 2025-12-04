@@ -66,10 +66,8 @@ class FlutterPhoneCallStatePlugin: FlutterPlugin {
         result.success(true)
       }
       if(call.method == "isServiceRunning"){
-        CoroutineScope(Dispatchers.Default).launch {
-          isServiceRunning(context, CallMonitoringService::class.java)
-        }
-        result.success(true)
+        val isRunning = isServiceRunning(context, CallMonitoringService::class.java)
+        result.success(isRunning)
       }
     }
   }
